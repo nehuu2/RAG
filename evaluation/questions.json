@@ -13,5 +13,50 @@
     },
     {
         "question": "What is the role of chunking in a RAG pipeline?"
+    },
+    {
+        "question": "Why is chunk overlap used when splitting documents?"
+    },
+    {
+        "question": "What is the purpose of similarity search in a RAG application?"
+    },
+    {
+        "question": "What is ChromaDB used for in a RAG system?"
+    },
+    {
+        "question": "What metadata can be stored with document chunks?"
+    },
+    {
+        "question": "Why should a RAG system preserve source information?"
+    },
+    {
+        "question": "What should a RAG system do when no relevant context is retrieved?"
+    },
+    {
+        "question": "How does a RAG system reduce hallucination?"
+    },
+    {
+        "question": "Why are citations important in a grounded RAG answer?"
+    },
+    {
+        "question": "What is the purpose of a similarity threshold?"
+    },
+    {
+        "question": "What is the purpose of top-k retrieval?"
+    },
+    {
+        "question": "What is the role of an embedding model in document retrieval?"
+    },
+    {
+        "question": "What types of documents can the RAG application ingest?"
+    },
+    {
+        "question": "What metrics can be used to evaluate retrieval quality?"
+    },
+    {
+        "question": "What is Recall@k in retrieval evaluation?"
+    },
+    {
+        "question": "What is Mean Reciprocal Rank (MRR) used for in retrieval evaluation?"
     }
 ]
