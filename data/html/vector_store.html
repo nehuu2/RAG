@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Vector Stores for RAG</title></head>
+<body>
+<h1>Vector Stores for RAG</h1>
+
+<h2>ChromaDB</h2>
+<p>ChromaDB is a vector database that can be used locally for retrieval applications. It stores embeddings together with documents and metadata, making it useful for a compact RAG prototype.</p>
+
+<h2>Why metadata matters</h2>
+<p>Metadata makes retrieved chunks traceable. A useful record can include the source filename, file type, page number, and chunk identifier. Metadata can also be used to restrict retrieval to selected documents or file types.</p>
+
+<h2>Idempotent ingestion</h2>
+<p>Idempotent ingestion means running the ingestion process repeatedly does not create duplicate vectors for the same logical chunk. A deterministic identifier based on source information and chunk position is one practical way to achieve this.</p>
+
+<h2>Retrieval pipeline</h2>
+<p>A query is embedded using the same embedding model family used for document chunks. The vector store returns the nearest candidates. The application can then apply a similarity threshold and construct a grounded context for the generator.</p>
+
+<h2>No-context behavior</h2>
+<p>If no retrieved chunk passes the relevance threshold, the application should not fabricate an answer from unsupported information. It should report that the supplied corpus does not contain enough relevant context.</p>
+</body>
+</html>
